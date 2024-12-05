@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Fixture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        table th {
+            background-color:#0066cc ;
+            color: white;
+        }
+        .match-detail {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #4CAF50;
+        }
+        .match-detail h3 {
+            margin-top: 0;
+        }
+        .match-row:hover {
+            cursor: pointer;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Match Fixture</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Home Team</th>
+                    <th>Away Team</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="match-row" onclick="toggleDetails(1)">
+                    <td>Jan 10, 2024</td>
+                    <td>7:00 PM</td>
+                    <td>Lions FC</td>
+                    <td>Eagles FC</td>
+                    <td>Lion’s Stadium</td>
+                </tr>
+                <tr id="details-1" class="match-detail">
+                    <td colspan="5">
+                        <h3>Match Details</h3>
+                        <p><strong>Home Team:</strong> Lions FC</p>
+                        <p><strong>Away Team:</strong> Eagles FC</p>
+                        <p><strong>Date:</strong> January 10, 2024</p>
+                        <p><strong>Time:</strong> 7:00 PM</p>
+                        <p><strong>Venue:</strong> Lion's Stadium</p>
+                        <p><strong>Referee:</strong> John Doe</p>
+                        <p><strong>Ticket Info:</strong> Available at Lion's Stadium Box Office</p>
+                    </td>
+                </tr>
+                <tr class="match-row" onclick="toggleDetails(2)">
+                    <td>Jan 11, 2024</td>
+                    <td>6:30 PM</td>
+                    <td>Sharks United</td>
+                    <td>Tigers FC</td>
+                    <td>Shark Park</td>
+                </tr>
+                <tr id="details-2" class="match-detail">
+                    <td colspan="5">
+                        <h3>Match Details</h3>
+                        <p><strong>Home Team:</strong> Sharks United</p>
+                        <p><strong>Away Team:</strong> Tigers FC</p>
+                        <p><strong>Date:</strong> January 11, 2024</p>
+                        <p><strong>Time:</strong> 6:30 PM</p>
+                        <p><strong>Venue:</strong> Shark Park</p>
+                        <p><strong>Referee:</strong> Sarah Lee</p>
+                        <p><strong>Ticket Info:</strong> Available at Shark Park Box Office</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function toggleDetails(matchId) {
+            var detailRow = document.getElementById("details-" + matchId);
+            if (detailRow.style.display === "none" || detailRow.style.display === "") {
+                detailRow.style.display = "table-row"; 
+            } else {
+                detailRow.style.display = "none"; 
+            }
+        }
+    </script>
+
+</body>
+</html>

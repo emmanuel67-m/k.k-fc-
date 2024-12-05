@@ -1,0 +1,135 @@
+/* Reset some basic styles */
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #002b45; /* Dark blue, for Manchester City */
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  #home {
+    background: #00a9e0; /* City blue */
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  #fixtures, #news, #store {
+    background: #fff;
+    margin: 20px 0;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #002b45;
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+  
+  footer {
+    background: #002b45;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+  
+  }
+  
+  @media (max-width: 768px) {
+    header nav ul {
+      text-align: center;
+      display: block;
+    }
+  
+    header nav ul li {
+      margin-bottom: 10px;
+    }
+  }
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .modal-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background-color: #005bb5;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+    color: #0066cc; 
+    text-decoration: underline;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }

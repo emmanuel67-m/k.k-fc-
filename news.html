@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        
+        header {
+            background-color: #2c3e50;
+            padding: 20px 0;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .news-main {
+            margin-top: 30px;
+        }
+
+        .news-featured {
+            margin-bottom: 40px;
+        }
+
+        .featured-post {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .featured-post img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .featured-post h2 {
+            font-size: 1.8rem;
+            margin-top: 20px;
+        }
+
+        .featured-post .date {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .featured-post .excerpt {
+            margin: 15px 0;
+        }
+
+        .featured-post .read-more {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .featured-post .read-more:hover {
+            text-decoration: underline;
+        }
+
+    
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .news-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .news-item h3 {
+            font-size: 1.6rem;
+            margin-top: 15px;
+        }
+
+        .news-item .date {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .news-item .excerpt {
+            margin: 15px 0;
+        }
+
+        .news-item .read-more {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .news-item .read-more:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header nav ul li {
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  
+    <header>
+        <div class="container">
+            <h1 class="site-title">Our Team News</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="news-main">
+        <section class="news-featured">
+            <article class="featured-post">
+                <img src="featured-image.jpg" alt="Featured News">
+                <h2><a href="post-link.html">New Project Launch: Exciting News for Our Team!</a></h2>
+                <p class="date">Posted on: December 4, 2024</p>
+                <p class="excerpt">We are thrilled to announce the launch of our newest project. It’s been in the works for months, and we can’t wait to share the details with you...</p>
+                <a href="post-link.html" class="read-more">Read More</a>
+            </article>
+        </section>
+
+        
+        <section class="news-grid">
+            <div class="news-item">
+                <img src="thumb1.jpg" alt="News Post Thumbnail">
+                <h3><a href="post-link1.html">Team Member Spotlight: John Doe</a></h3>
+                <p class="date">Posted on: December 5, 2024</p>
+                <p class="excerpt">Meet kenny, our new senior coach who brings years of experience to the team. In this post, we dive into his background...</p>
+                <a href="post-link1.html" class="read-more">Read More</a>
+            </div>
+            <div class="news-item">
+                <img src="thumb2.jpg" alt="News Post Thumbnail">
+                <h3><a href="post-link2.html">Upcoming Event: Join Us at oke-ani 6 aside  2024</a></h3>
+                <p class="date">Posted on: November 10, 2024</p>
+                <p class="excerpt">We’re excited to announce that we’ll be attending oke-andi 6 aside competition 2024! Come visit us at booth 42 to learn about our latest projects...</p>
+                <a href="post-link2.html" class="read-more">Read More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Our Team. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
